@@ -12,7 +12,7 @@ const config = {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/favicon.png',
     organizationName: 'rofiksupriant', // Usually your GitHub org/user name.
     projectName: 'blog', // Usually your repo name.
 
@@ -45,7 +45,7 @@ const config = {
             title: '',
             logo: {
                 alt: 'My Site Logo',
-                src: 'img/logo.svg',
+                src: 'img/logo.png',
             },
             items: [{
                     type: 'doc',
