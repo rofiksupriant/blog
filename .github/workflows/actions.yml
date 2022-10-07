@@ -1,10 +1,15 @@
-- name: Deploy
+name: Github Pages
+on:
+  push:
+    branches: 
+      - gh-pages
 
-  on:
-    push:
-      branches: 
-        - gh-pages
-  uses: peaceiris/actions-gh-pages@v3
-  with:
-    github_token: ${{ secrets.TOKEN }}
-    publish_branch: gh-pages
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_branch: gh-pages
